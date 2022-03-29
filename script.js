@@ -37,13 +37,22 @@ const registration = function(){
     }
 
     const showRegistration = function(){
-        let reg = document.querySelector('.registration__wrapper');
-        reg.classList.add('fade-out-reverse');
+        let regInd = document.querySelector('.registrationIndicator__wrapper');
+        let reg = document.querySelector('.registrationForm__wrapper');
+        regInd.classList.add('fade-out-reverse');
+        const showForm = function(){
+            reg.classList.add('fade-out-reverse');
+            reg.classList.remove('hide');
+        }
+        setTimeout(showForm, 1000)
+        
     }
 
     setTimeout(hideBoxes, 400);
     setTimeout(hideButtons, 800);
     setTimeout(showRegistration, 1200);
+
+
 
 }
 

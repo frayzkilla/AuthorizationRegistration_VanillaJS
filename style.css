@@ -194,11 +194,11 @@ input::placeholder {
 
 }
 
-.registration__wrapper {
+.registrationIndicator__wrapper {
   position: absolute;
   z-index: 1000;
   width: 450px;
-  top: 20%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -206,11 +206,27 @@ input::placeholder {
   opacity: 0;
 }
 
+.registrationForm__wrapper {
+  position: absolute;
+  z-index: 1000;
+  width: 450px;
+  height: 200px;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  background-color: rgba(168, 168, 168, 0.418);
+  opacity: 0;
+}
+
 .step__indicator {
-  background-color: rgba(201, 201, 201, 0.212);
+  /* background-color: rgba(201, 201, 201, 0.212); */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 10px;
+  border-radius: 8px;
 }
 
 .step {
@@ -234,7 +250,11 @@ input::placeholder {
   height: 50px;
   width: 50px;
   border-radius: 50%;
+  cursor: pointer;
+}
 
+.round:hover {
+  border: 1px solid rgba(255, 255, 255, 0.466);
 }
 
 .line {
