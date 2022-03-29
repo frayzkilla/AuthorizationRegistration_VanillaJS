@@ -3,9 +3,25 @@
     padding: 0;
 }
 
+.signedIn {
+  /* width: 140px; */
+  /* border-bottom: 3.5px solid rgba(245, 245, 245, 0.212); */
+  padding: 7px 7px;
+  color: white;
+  font-size: large;
+  font-weight: 500;
+  opacity: 0;
+  margin-top: 33%;
+  margin-left: 22%;
+}
+
+.hide {
+  display: none;
+}
+
 html {
     font-family: sans-serif;
-    background-color: rgb(31, 0, 59);
+    background-color: rgb(255, 255, 255);
     background-image: url('bg.jpg');
     background-size: cover;
 }
@@ -17,6 +33,8 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    border-radius: 11px;
+    padding: 12px;
 }
 
 .login__box h1 {
@@ -70,6 +88,10 @@ html {
     margin-top: 0px;
 }
 
+input::placeholder {
+  color: rgba(255, 255, 255, 0.521);
+}
+
 @-webkit-keyframes slit-out-vertical {
     0% {
       -webkit-transform: translateZ(0) rotateY(0);
@@ -121,6 +143,23 @@ html {
       opacity: 0;
     }
 }
+
+@-webkit-keyframes blur-in {
+  0% {
+    backdrop-filter: blur(0px);
+  }
+  100% {
+    backdrop-filter: blur(1.5px);
+  }
+}
+@keyframes blur-in {
+  0% {
+    backdrop-filter: blur(0px);
+  }
+  100% {
+    backdrop-filter: blur(1.5px);
+  }
+}
   
   
 .slit-out {
@@ -128,7 +167,29 @@ html {
 	        animation: slit-out-vertical 0.5s ease-in both;
 }
 
+.slit-out-reverse {
+	-webkit-animation: slit-out-vertical 0.5s ease-in reverse both;
+	        animation: slit-out-vertical 0.5s ease-in reverse both;
+}
+
 .fade-out {
 	-webkit-animation: fade-out 1s ease-out both;
 	        animation: fade-out 1s ease-out both;
+}
+
+.fade-out-reverse {
+	-webkit-animation: fade-out 1s ease-out reverse both;
+	        animation: fade-out 1s ease-out reverse both;
+}
+
+.blur-in {
+  -webkit-animation: blur-in 1s ease-out both;
+	        animation: blur-in 1s ease-out both;
+
+}
+
+.blur-out {
+  -webkit-animation: blur-in 1s ease-out reverse both;
+	        animation: blur-in 1s ease-out reverse both;
+
 }
