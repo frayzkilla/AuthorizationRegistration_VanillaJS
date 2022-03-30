@@ -38,10 +38,10 @@
                         <div class="line hide"></div>
                     </div>
                     <div class="mid-point">
-                        <div class="round contour"></div>
+                        <div class="round contour" id = "first-round"></div>
                     </div>
                     <div class="post-line">
-                        <div class="line next"></div>
+                        <div class="line next" id = "firstline1"></div>
                     </div>
                 </div>
             </div>
@@ -51,13 +51,13 @@
                 </div>
                 <div class="step__point">
                     <div class="pre-line">
-                        <div class="line next"></div>
+                        <div class="line next" id = "firstline2"></div>
                     </div>
                     <div class="mid-point">
-                        <div class="round next"></div>
+                        <div class="round next" id = "second-round"></div>
                     </div>
                     <div class="post-line">
-                        <div class="line next"></div>
+                        <div class="line next" id = "secondline1"></div>
                     </div>
                 </div>
             </div>
@@ -67,10 +67,10 @@
                 </div>
                 <div class="step__point">
                     <div class="pre-line">
-                        <div class="line next"></div>
+                        <div class="line next" id = "secondline2"></div>
                     </div>
                     <div class="mid-point">
-                        <div class="round next"></div>
+                        <div class="round next" id = "third-round"></div>
                     </div>
                     <div class="post-line">
                         <div class="line hide"></div>
@@ -90,6 +90,9 @@
                 <p class="title">Last name</p>
                 <input type="text" placeholder="Wick">
             </div>
+            <div class="btn__q">
+                <input class = "btn__next" type="button" value = "Next step" onclick="step2()">
+            </div>
         </div>
         <div class="registration__form2 hide">
             <div class="first__q">
@@ -100,6 +103,9 @@
                 <p class="title">E-mail</p>
                 <input type="text" placeholder="Bigd**k@mail.ru">
             </div>
+            <div class="btn__q">
+                <input class = "btn__next" type="button" value = "Next step" onclick="step3()">
+            </div>
         </div>
         <div class="registration__form3 hide">
             <div class="first__q">
@@ -109,6 +115,9 @@
             <div class="last__q">
                 <p class="title">City</p>
                 <input type="text" placeholder="New York">
+            </div>
+            <div class="btn__q">
+                <input class = "btn__next" type="button" value = "Finish" onclick="finish()">
             </div>
         </div>
     </div>
