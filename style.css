@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+.alert {
+  font-size: small;
+  margin: 10px;
+}
+
 .signedIn {
   /* width: 140px; */
   /* border-bottom: 3.5px solid rgba(245, 245, 245, 0.212); */
@@ -69,6 +74,8 @@ html {
     border-bottom: 3.5px solid rgba(245, 245, 245, 0.712);
 }
 
+
+
 .btn {
     width: 100%;
     margin-top: 35px;
@@ -86,7 +93,9 @@ html {
 
 .btn__registration {
     margin-top: 0px;
+    
 }
+
 
 input::placeholder {
   color: rgba(255, 255, 255, 0.521);
@@ -322,4 +331,28 @@ input::placeholder {
 
 .btn__next:hover {
   background-color: rgba(138, 138, 138, 0.253);
+}
+
+.hello {
+  font-size: x-large;
+  color: white;
+  margin: 200px;
+}
+
+.attention {
+  margin-top: 30%;
+  margin-left: 70%;
+  padding: 20px;
+  color: white;
+  font-size: larger;
+}
+
+a{
+  font-size: larger;
+  color: white;
+}
+
+.alert {
+  font-size: larger;
+  margin-bottom: 20px;
 }

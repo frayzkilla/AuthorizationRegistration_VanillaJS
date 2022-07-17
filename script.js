@@ -278,5 +278,6 @@ const signIn = function(){
 
 }
 
+document.querySelector('.register').addEventListener('click', registration);
 
 

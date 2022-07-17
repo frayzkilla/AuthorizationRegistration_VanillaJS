@@ -9,19 +9,19 @@
     <title>Auth</title>
 </head>
 <body>
-    <div class="login__box">
+    <form class="login__box" method="post" action="vendor/signin.php">
         <h1 class = 'h1 slit-out-reverse'>Login</h1>
         <div class="text__box slit-out-reverse">
             <i class = "fa fa-user"></i>
-            <input type="text" placeholder="Username">
+            <input type="text" name="user_login" placeholder="Username">
         </div>
         <div class="text__box slit-out-reverse">
             <i class = "fa fa-lock"></i>
-            <input type="password" placeholder="Password">
+            <input type="password" name="user_password" placeholder="Password">
         </div>
-        <input type="button" class = "btn btn__autorization fade-out-reverse" value = "Sign in" onclick="signIn()">
+        <button type="submit" class = "btn btn__autorization fade-out-reverse">Sign in</button>
         <input type="button" class = "btn btn__registration fade-out-reverse" value = "Registration" onclick="registration()">
-    </div>
+    </form>
 
     <div class="signedIn">
         You are signed in.
@@ -80,15 +80,15 @@
         </div>
         
     </div>
-    <div class="registrationForm__wrapper hide">
+    <form class="registrationForm__wrapper hide" method="post" action="vendor/register.php">
         <div class="registration__form1">
             <div class="first__q">
-                <p class="title">First name</p>
-                <input type="text" placeholder="John">
+                <p class="title" >Login</p>
+                <input type="text" name = "username" placeholder="John Wick">
             </div>
             <div class="last__q">
-                <p class="title">Last name</p>
-                <input type="text" placeholder="Wick">
+                <p class="title">Password</p>
+                <input type="password" name = "password">
             </div>
             <div class="btn__q">
                 <input class = "btn__next" type="button" value = "Next step" onclick="step2()">
@@ -97,7 +97,7 @@
         <div class="registration__form2 hide">
             <div class="first__q">
                 <p class="title">Phone number</p>
-                <input type="text" placeholder="+79834423333">
+                <input type="text" name = "phone" placeholder="+79834423333">
             </div>
             <div class="last__q">
                 <p class="title">E-mail</p>
@@ -117,10 +117,10 @@
                 <input type="text" placeholder="New York">
             </div>
             <div class="btn__q">
-                <input class = "btn__next" type="button" value = "Finish" onclick="finish()">
+                <input class = "btn__next" type="submit" value = "Finish" onclick="finish()">
             </div>
         </div>
-    </div>
+    </form>
 
     <script src="script.js"></script>
 </body>
